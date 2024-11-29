@@ -356,7 +356,6 @@ class BigQuerySchemaGenerator:
                 project_id
             )
         except Exception as e:
-
             if self.config.project_ids and "not enabled BigQuery." in str(e):
                 action_mesage = (
                     "The project has not enabled BigQuery API. "
@@ -417,7 +416,6 @@ class BigQuerySchemaGenerator:
         bigquery_project: BigqueryProject,
         db_tables: Dict[str, List[BigqueryTable]],
     ) -> Iterable[MetadataWorkUnit]:
-
         db_views: Dict[str, List[BigqueryView]] = {}
         db_snapshots: Dict[str, List[BigqueryTableSnapshot]] = {}
         project_id = bigquery_project.id
@@ -523,7 +521,6 @@ class BigQuerySchemaGenerator:
                     logger.warning(
                         f"Could not create table ref for {table_item.path}: {e}"
                     )
-            yield from []
             return
 
         if self.config.include_tables:
@@ -1142,7 +1139,6 @@ class BigQuerySchemaGenerator:
         columns: List[BigqueryColumn],
         dataset_name: BigqueryTableIdentifier,
     ) -> MetadataWorkUnit:
-
         foreign_keys: List[ForeignKeyConstraint] = []
         # Foreign keys only make sense for tables
         if isinstance(table, BigqueryTable):
@@ -1184,7 +1180,6 @@ class BigQuerySchemaGenerator:
     ) -> Iterable[BigqueryTable]:
         # In bigquery there is no way to query all tables in a Project id
         with PerfTimer() as timer:
-
             # PARTITIONS INFORMATION_SCHEMA view is not available for BigLake tables
             # based on Amazon S3 and Blob Storage data.
             # https://cloud.google.com/bigquery/docs/omni-introduction#limitations
