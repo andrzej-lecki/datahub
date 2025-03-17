@@ -21,6 +21,16 @@
       "description": "<i>\"We found DataHub to provide excellent coverage for our needs. What we appreciate most about DataHub is <b>its powerful API platform.</b>\"<br /><br /><div style='color: gray;'>— Jean-Pierre Dijcks, Sr. Dir. Product Management at VISA</div></i><br />"
     },
     {
+      "name": "Apple",
+      "slug": "apple",
+      "link": "https://youtu.be/5eFZuzG4c-s?feature=shared",
+      "linkType": "video",
+      "tagline": "How Apple built a solid foundation for observability, governance, and data sharing with DataHub",
+      "category": "B2B & B2C",
+      "platform": "cloud",
+      "description": "Discover how DataHub provides a solid foundation for observability, governance, and data sharing, while we explore its role in managing AI and data metadata."
+    },
+    {
       "name": "Notion",
       "slug": "notion",
       "imageUrl": "/img/logos/companies/notion.png",
@@ -59,6 +69,17 @@
       "slug": "snap",
       "imageUrl": "/img/logos/companies/snap.png",
       "imageSize": "small"
+    },
+    {
+      "name": "Slack",
+      "slug": "slack",
+      "imageUrl": "/img/logos/companies/slack.png",
+      "imageSize": "large",
+      "link": "https://youtu.be/G5B0W03dvuU",
+      "linkType": "video",
+      "tagline": "Why Slack chose DataHub to solve lineage and discovery.",
+      "category": "B2B & B2C",
+      "description": "Slack adopted DataHub to track their entire data landscape, build lineage, and add rich context to metadata for search & discovery."
     },
     {
       "name": "Airtel",
@@ -150,6 +171,18 @@
       "tagline": "Self-Serve Data Governance with DataHub Action Framework",
       "category": "Financial & Fintech",
       "description": "Discover how Checkout leverage DataHub for advanced data management and compliance, especially in managing sensitive data types."
+    },
+    {
+      "name": "Etsy",
+      "slug": "etsy",
+      "imageUrl": "/img/logos/companies/etsy.png",
+      "imageSize": "medium",
+      "link": "https://youtu.be/kLe_xfTR_rM",
+      "linkType": "video",
+      "tagline": "Why Etsy used DataHub to solve their Data Discovery needs.",
+      "category": "E-Commerce",
+      "platform": "cloud",
+      "description": "Etsy leverages DataHub to solve their data discovery needs, enabling their data teams to find, understand, and trust their data."
     },
     {
       "name": "MYOB",
